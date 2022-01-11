@@ -1,0 +1,9 @@
+{
+    "env": {
+        "MONGO_ATLAS_PW": "Test@1223",
+        "MONGO_URI": "mongodb://127.0.0.1:27017/socialsmash",
+        "JWT_KEY": "secret",
+        "PROXY": "http://127.0.0.1:27017",
+        "PORT": "27017"
+    }
+}

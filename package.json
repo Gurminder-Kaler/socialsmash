@@ -1,0 +1,72 @@
+{
+    "name": "rest-shop",
+    "version": "1.0.0",
+    "description": "A SocialSmash",
+    "main": "index.js",
+    "scripts": {
+        "client-install": "cd client && npm install",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js",
+        "socket": "npm start --prefix socket",
+        "client": "npm start --prefix client",
+        "dev": "concurrently --kill-others \"npm run start\" \"npm run client\" \"npm run socket\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ramanandkushwaha/node-rest-shop.git"
+    },
+    "keywords": [
+        "node",
+        "restful",
+        "api"
+    ],
+    "author": "Anand kushwaha",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Ramanandkushwaha/node-rest-shop/issues"
+    },
+    "homepage": "https://github.com/Ramanandkushwaha/node-rest-shop#readme",
+    "dependencies": {
+        "aws-sdk": "^2.1040.0",
+        "axios": "^0.21.4",
+        "bcrypt": "^3.0.8",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "google-auth-library": "^7.10.2",
+        "jsonwebtoken": "^8.5.1",
+        "module-alias": "^2.2.2",
+        "moment": "^2.29.1",
+        "moment-timezone": "^0.5.34",
+        "mongoose": "^5.13.13",
+        "mongoose-paginate": "^5.0.3",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.3",
+        "multer-s3": "^2.10.0",
+        "popper.js": "^1.16.1",
+        "socket.io": "^4.3.2",
+        "validator": "^13.7.0"
+    },
+    "_moduleAliases": {
+        "@routes": "api/routes",
+        "@models": "api/models",
+        "@constants": "api/constants",
+        "@controllers": "api/controllers",
+        "@middlewares": "api/middlewares",
+        "@services": "api/services",
+        "@validations": "api/validations",
+        "@clientActions": "client/src/actions",
+        "@clientBackend": "client/src/backend",
+        "@clientFrontend": "client/src/frontend",
+        "@clientCommon": "client/src/common",
+        "@clientReducers": "client/src/reducers",
+        "@clientServices": "client/src/services",
+        "@clientStore": "client/src/store",
+        "@clientUtils": "client/src/utils",
+        "@clientValidations": "client/src/validations"
+    },
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "nodemon": "^1.19.4"
+    }
+}
